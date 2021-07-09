@@ -1,6 +1,6 @@
 [English version](https://github.com/nmarsollier/go_di_ioc2/blob/main/README_en.md)
 
-# Luego de funcional, volvemos a hablar de Inyección de dependencias
+# Luego de funcional, volvemos a hablar de inyección de dependencias
 
 Ya vimos en artículos anteriores, como aplicar programación funcional, porque es mejor usar ese estilo de programación en go, ahora revisamos inyección de dependencias con lo que ya sabemos.
 
