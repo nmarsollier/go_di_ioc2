@@ -1,4 +1,4 @@
-[English version](https://github.com/nmarsollier/go_di_ioc2/blob/main/README_en.md))
+[English version](https://github.com/nmarsollier/go_di_ioc2/blob/main/README_en.md)
 
 # Luego de funcional, volvemos a hablar de Inyección de dependencias
 
@@ -7,6 +7,8 @@ Ya vimos en artículos anteriores, como aplicar programación funcional, porque 
 ## Un patrón que no existe
 
 En programación funcional, la inyección de dependencias, per se, no existe, las estructuras no son creadas nunca con la intención acceder a dependencias.
+
+> Las interfaces en go no son para inyectar dependencias sino que permiten implementar el [patrón strategy](https://github.com/nmarsollier/go_di_ioc/blob/main/README.md), sin embargo la estrategia a utilizar no debe ser pasada por parámetros, sino mas bien cada función debe recibir los parámetros neces
 
 Cuando escribimos una función en el estilo funcional, básicamente respetamos lo siguiente :
 
@@ -37,8 +39,7 @@ Las funciones deben verse como cajas cerradas desde el mundo exterior, son cajas
 Un error muy común en servicios http es pasar el contexto y que las funciones extraigan valores del contexto, las funciones deben recibir el contexto solo para cancelar goroutines, por ejemplo, pero nunca para sacar valores del mismo.
 
 El contexto es una bolsa de información que nunca nos deja claro que requisitos debe tener para ser valido, si bien podemos usar el contexto y debemos usar el contexto para poner valores, estos valores quedan restringidas en su uso dentro de los controladores, cuando llamamos a un service extraemos esos valores y se debe llamar con el valor que el service necesita puntualmente.
-
-> Las interfaces en go no son para inyectar dependencias sino que permiten implementar el [patrón strategy](https://github.com/nmarsollier/go_di_ioc/blob/main/README.md), sin embargo la estrategia a utilizar no debe ser pasada por parámetros, sino mas bien cada función debe recibir los parámetros necesarios para que un factory (que es parte del patrón strategy) determine la estrategia a utilizar.
+arios para que un factory (que es parte del patrón strategy) determine la estrategia a utilizar.
 
 ## Referencias
 
