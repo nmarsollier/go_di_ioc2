@@ -30,9 +30,9 @@ Mas adelante en esta guía se explican mas estrategias.
 
 ## Que datos debe recibir una función ?
 
-Solo los que necesita, nunca debemos pasar datos que la función no necesita, o estructuras complejas que luego no se usan, siempre es preferible adaptar estructuras complejas a mas simples, de forma tal que quede claro que una función necesita eso y solo eso, ni mas, ni menos.
+Solo los que necesita, nunca debemos pasar datos que la función no necesita, o estructuras complejas que luego no se usan, siempre es preferible recibir los parametros justos y cuando son muchos o confusos, definir y pasar por estructuras esos parametros, de forma tal que quede claro que una función necesita eso y solo eso, ni mas, ni menos.
 
-Las funciones deben verse como cajas cerradas desde el mundo exterior, son cajas que necesitan cierta data, y esa data que necesitan es suficiente para que el que usa la función entienda que se necesita y a veces con solo conocer los datos ya sabemos el porque.
+Las funciones deben verse como cajas cerradas desde el mundo exterior, son cajas que necesitan cierta información, porque responden a cierta funcionalidad bien clara, y esa data que necesitan es suficiente para que el que usa la función entienda que se necesita y a veces con solo conocer los datos ya sabemos el porque.
 
 > Pasar siempre una estructura como parámetro de una función no es buena practica, solo definimos una estructura como parámetro cuando los parámetros son confusos de leer, caso contrario conviene pasar parámetros individuales.
 
