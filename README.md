@@ -8,7 +8,7 @@ Ya vimos en artículos anteriores, como aplicar programación funcional, porque 
 
 En programación funcional, la inyección de dependencias, per se, no existe, las estructuras no son creadas nunca con la intención acceder a dependencias.
 
-> Las interfaces en go no son para inyectar dependencias sino que permiten implementar el [patrón strategy](https://github.com/nmarsollier/go_di_ioc/blob/main/README.md), sin embargo la estrategia a utilizar no debe ser pasada por parámetros, sino mas bien cada función debe recibir los parámetros neces
+> Las interfaces en go no son para inyectar dependencias sino que permiten implementar el [patrón strategy](https://github.com/nmarsollier/go_di_ioc/blob/main/README.md), sin embargo la estrategia a utilizar no debe ser pasada por parámetros, sino mas bien cada función debe recibir los parámetros necesarios para encontrar las dependencias requeridas.
 
 Cuando escribimos una función en el estilo funcional, básicamente respetamos lo siguiente :
 
