@@ -39,7 +39,6 @@ Las funciones deben verse como cajas cerradas desde el mundo exterior, son cajas
 Un error muy común en servicios http es pasar el contexto y que las funciones extraigan valores del contexto, las funciones deben recibir el contexto solo para cancelar goroutines, por ejemplo, pero nunca para sacar valores del mismo.
 
 El contexto es una bolsa de información que nunca nos deja claro que requisitos debe tener para ser valido, si bien podemos usar el contexto y debemos usar el contexto para poner valores, estos valores quedan restringidas en su uso dentro de los controladores, cuando llamamos a un service extraemos esos valores y se debe llamar con el valor que el service necesita puntualmente.
-arios para que un factory (que es parte del patrón strategy) determine la estrategia a utilizar.
 
 ## Referencias
 
